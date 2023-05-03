@@ -10,4 +10,4 @@
 #### ระบบ Auto Restart script ทันที่เมื่อ compile เสร็จ
 #### ระบบ Auto Restart script จะทำงานก็ต่อเมื่อ เพิ่ม rcon_password "123456789" ลงใน server.cfg
 
-## !!! อย่าลืมแก้ name ใน package.json ให้ตรงกับชื่อ Script
+## !!! อย่าลืมแก้ name: "nubdev-nui-react" ใน package.json ให้ตรงกับชื่อ Script
