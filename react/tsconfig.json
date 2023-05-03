@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "typeRoots" : ["node_modules/@types", "src/types"]
+  },
+  "include": ["src/types/media.d.ts"],
+  "lib": [
+    "es2018",
+    "dom"
+  ],
+}
