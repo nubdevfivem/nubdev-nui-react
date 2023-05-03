@@ -6,7 +6,7 @@
 #### 3. npm i
 #### 4. npm run dev
 
-#### กด Save ไฟล์แล้ว Webpack จะ Compile Source code ให้ทันที่ ใช้เวลาประมาณ 100ms ไม่ต้องใช้ npm run build ให้เสียเวลา
+#### กด Save ไฟล์แล้ว Webpack จะ Compile Source code ให้ทันที ใช้เวลาประมาณ 100ms ไม่ต้องใช้ npm run build ให้เสียเวลา
 #### ระบบ Auto Restart script ทันที่เมื่อ compile เสร็จ
 #### ระบบ Auto Restart script จะทำงานก็ต่อเมื่อ เพิ่ม rcon_password "123456789" ลงใน server.cfg
 
