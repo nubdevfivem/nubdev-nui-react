@@ -1,5 +1,5 @@
 ESX = nil
-local ui = false
+local ui = true
 
 Citizen.CreateThread(function()
     while ESX == nil do
@@ -8,6 +8,8 @@ Citizen.CreateThread(function()
         end)
         Citizen.Wait(0)
     end
+
+    SetNuiFocus(ui, ui)
 end)
 
 RegisterNetEvent("nubdev_react:show_ui")
@@ -28,4 +30,6 @@ RegisterNUICallback('set_position_up', function(data,cb)
     local ped_coords = GetEntityCoords(ped)
 
     SetEntityCoords(ped, ped_coords)
+
+    cb({status = "success"})
 end)

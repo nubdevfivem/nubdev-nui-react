@@ -26,7 +26,7 @@ const ButtonChangeTheme = () => {
 
     return(
         <>
-            <button onClick={() => onClickChangeTheme()} className="btn">change theme</button>
+            <button onClick={() => onClickChangeTheme()} className="btn">Change Theme</button>
         </>
     )
 }

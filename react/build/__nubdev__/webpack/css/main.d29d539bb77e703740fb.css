@@ -1,0 +1,320 @@
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/assets/styles/index.scss ***!
+  \***************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap);
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/styles/index.css ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/assets/styles/index.scss (1) ***!
+  \*******************************************************************************************************************************************************/
+body {
+  font-family: "IBM Plex Sans Thai", sans-serif; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 9;
+  transition: 0.3s; }
+
+.btn-change-theme {
+  padding: 10px 5px;
+  display: block;
+  margin: 0 auto; }
+
+.menu-settings {
+  position: absolute;
+  left: -11%;
+  background-color: #23242686;
+  padding: 5px;
+  border-radius: 7px; }
+  .menu-settings .menu-item {
+    background-color: #232426;
+    height: 35px;
+    width: 35px;
+    color: white;
+    position: relative;
+    border-radius: 7px; }
+    .menu-settings .menu-item .menu-panel-color {
+      background-color: #23242686;
+      position: absolute;
+      left: -50%;
+      transform: translateX(-100%);
+      height: 35px;
+      border-radius: 7px;
+      padding: 0px 5px 5px 5px;
+      display: flex; }
+      .menu-settings .menu-item .menu-panel-color .item {
+        width: 20px;
+        height: 20px;
+        transform: translateY(40%);
+        border-radius: 7px; }
+        .menu-settings .menu-item .menu-panel-color .item:not(:last-child) {
+          margin-right: 7px; }
+    .menu-settings .menu-item:not(:last-child) {
+      margin-bottom: 5px; }
+    .menu-settings .menu-item i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+
+.hide {
+  opacity: 0; }
+
+.rotate-zone {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.save {
+  margin-top: 10px;
+  display: flex; }
+  .save button {
+    color: white;
+    padding: 0px 10px;
+    border: 0px;
+    border-radius: 0px 4px 4px 0px;
+    width: auto; }
+    .save button:hover {
+      cursor: pointer; }
+  .save input {
+    background-color: #232426;
+    width: 100%;
+    border: 0px;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 4px 0px 0px 4px; }
+    .save input:focus {
+      outline: none; }
+
+button {
+  color: white;
+  border: 0px;
+  padding: 5px 5px;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  line-height: 0px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer; }
+  button:disabled {
+    opacity: 0.5; }
+
+.input-rename-cloth-set {
+  width: 100%;
+  background-color: #474545;
+  color: white;
+  border: 0px;
+  padding-left: 7px; }
+  .input-rename-cloth-set:focus {
+    outline: none; }
+  .input-rename-cloth-set::-webkit-input-placeholder {
+    color: white; }
+
+.cloths-set .item {
+  width: 100% !important;
+  background-color: #232426;
+  margin: 5px 0px;
+  border-radius: 4px;
+  padding: 5px 0px;
+  color: white;
+  position: relative;
+  width: 100%; }
+
+.menu-options {
+  z-index: 9;
+  display: flex;
+  transform: translateX(-50%);
+  top: -50px;
+  position: absolute;
+  left: 50%; }
+  .menu-options .option {
+    color: white;
+    background-color: #232426;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    position: relative; }
+    .menu-options .option i {
+      font-size: 22px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .menu-options .option:hover {
+      background-color: #232426af;
+      cursor: pointer; }
+
+.tutorial {
+  padding: 5px;
+  position: absolute;
+  left: 15%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #23242652;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px; }
+
+.menu-slot {
+  height: auto;
+  max-height: 700px;
+  overflow: hidden;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 8px;
+  padding-right: 30px; }
+  .menu-slot::-webkit-scrollbar {
+    width: 7px; }
+  .menu-slot::-webkit-scrollbar-track {
+    background-color: #474545;
+    border-radius: 4px; }
+  .menu-slot .slot {
+    position: relative;
+    background-color: #232426;
+    margin-bottom: 5px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+    border: 2px solid transparent; }
+    .menu-slot .slot .input-range {
+      width: 100%; }
+    .menu-slot .slot .btn-pre {
+      border: 0px;
+      color: white;
+      margin: 0px 2px;
+      border-radius: 4px; }
+      .menu-slot .slot .btn-pre:focus {
+        border: 0px;
+        outline: none; }
+    .menu-slot .slot .btn-next {
+      border: 0px;
+      color: white;
+      margin: 0px 2px;
+      border-radius: 4px; }
+      .menu-slot .slot .btn-next:focus {
+        border: 0px;
+        outline: none; }
+    .menu-slot .slot .input-value {
+      background-color: #696868;
+      color: white;
+      max-width: 40px;
+      width: 30px;
+      text-align: center;
+      -moz-appearance: textfield;
+      border: 0px;
+      border-radius: 10px;
+      font-weight: bold; }
+      .menu-slot .slot .input-value::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .menu-slot .slot .input-value::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+    .menu-slot .slot .input-max {
+      width: 30px;
+      text-align: center;
+      -moz-appearance: textfield;
+      border: 0px;
+      border-radius: 10px;
+      font-weight: bold; }
+      .menu-slot .slot .input-max::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .menu-slot .slot .input-max::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+
+input {
+  font-family: "IBM Plex Sans Thai", sans-serif; }
+  input:focus {
+    border: 0px;
+    outline: none; }
+
+.right-menu {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  width: 28%;
+  padding: 10px; }
+
+.sex-menu {
+  background-color: #232426;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  position: relative;
+  height: 50px; }
+
+.btn-sex {
+  width: 50px;
+  height: 50px;
+  border: 0px; }
+  .btn-sex i {
+    font-size: 32px; }
+
+.btn-sex.male {
+  background: #43ADE1;
+  position: absolute;
+  left: 25%;
+  border-radius: 10px; }
+
+.btn-sex.female {
+  background: #EA0075;
+  position: absolute;
+  float: right;
+  right: 25%;
+  border-radius: 10px; }
+
+.btn-buy {
+  color: white;
+  border: 0px;
+  padding: 10px 0px;
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  line-height: 0px;
+  font-weight: bold; }
+
+.slots .slot input {
+  width: 100%; }
+
+.search-menu {
+  width: 97.5%;
+  background-color: #232426;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex; }
+  .search-menu .btn-search {
+    background-color: #2c2c2c;
+    color: white;
+    border: 0px; }
+  .search-menu input {
+    width: 100%;
+    background-color: #474545;
+    color: white;
+    border: 0px;
+    padding-left: 7px; }
+    .search-menu input:focus {
+      outline: none; }
+    .search-menu input::-webkit-input-placeholder {
+      color: white; }
+

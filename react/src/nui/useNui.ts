@@ -1,28 +1,27 @@
 import {MutableRefObject, useEffect, useRef} from "react";
 
-interface NuiMessageData<T = unknown> {
+interface IFWindowMessage<payload = any> {
   action: string;
-  payload: T;
+  payload: payload;
 }
 
-type NuiHandlerSignature<T> = (data: T) => void;
+type NuiHandlerSignature<payload> = (data: payload) => void;
 
-export const useNui = <T = any>(action: string,handler: (data: T) => void) => {
-  const savedHandler: MutableRefObject<NuiHandlerSignature<T>> = useRef(() => {});
+export const useNui = <payload = any>(action: string,handler: (data: payload) => void) => {
 
+  const MutablePayload: MutableRefObject<NuiHandlerSignature<payload>> = useRef(() => {});
+  
   useEffect(() => {
-    savedHandler.current = handler;
+    MutablePayload.current = handler;
   }, [handler]);
 
   useEffect(() => {
-    const eventListener = (event: MessageEvent<NuiMessageData<T>>) => {
-      const { action: eventAction, payload } = event.data;
+    const eventListener = (event: MessageEvent<IFWindowMessage<payload>>) => {
+      const { action: nuiaction, payload } = event.data;
       
-      if (savedHandler.current) {
-        if (eventAction === action) {
-          savedHandler.current(payload);
+      if (nuiaction === action && MutablePayload.current) {
+          MutablePayload.current(payload);
         }
-      }
     };
 
     window.addEventListener("message", eventListener);

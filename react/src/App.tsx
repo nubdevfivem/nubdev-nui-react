@@ -13,13 +13,12 @@ const App: FC = () => {
 
   const { state,dispatch } = useStateProvider() /* เก็บ State บน Store คล้ายๆ Redux */
 
-  const [display,setDisplay] = useState(false)
+  const [display,setDisplay] = useState(true)
 
   useNui('display',(payload: any) => {
     if(payload.ui != undefined){
       setDisplay(payload.ui)
     }
-    
   })
 
   const GlobalStyle = createGlobalStyle`
@@ -41,8 +40,12 @@ const App: FC = () => {
   }
 `;
 
-const set_position_up = () => {
-  fetchNui('set_position_up')
+const set_position_up = async () => {
+  const {data} = await fetchNui('set_position_up')
+  if(data.status == "success"){
+    console.log("set new position");
+  }
+  
 }
 
   return (

@@ -1,7 +1,7 @@
 
 import axios from "axios"
 
-export async function fetchNui<T = any>(eventName: string, data?: any) {
+export async function fetchNui(eventName: string, data?: any) {
 
   const resourceName = (window as any).GetParentResourceName ? (window as any).GetParentResourceName() : 'nui-frame-app';
 
