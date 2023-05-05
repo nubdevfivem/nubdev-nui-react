@@ -47,8 +47,6 @@ const compiler = webpack([ /* เรื่มทำการ Complie */
     }
 ])
 
-var sendCount = 0
-
 compiler.watch({}, (err, stats) => {
 
     if (err) { /* เมื่อ Complie แล้วเกิด Error*/
@@ -62,7 +60,6 @@ compiler.watch({}, (err, stats) => {
       for (let i = 0; i < commands.length; i++) { /* ยิงคำสั่ง */
         const element = commands[i];
         conn.send(element)
-        sendCount++
       }
     }
   });
